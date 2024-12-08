@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: wordpress-beta
+  namespace: argo
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/babywyrm/argocd-example-apps.git
+    targetRevision: main
+    path: wordpress-beta
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: argo 
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+
