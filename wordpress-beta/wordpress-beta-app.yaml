@@ -7,13 +7,12 @@ spec:
   project: default
   source:
     repoURL: https://github.com/babywyrm/argocd-example-apps.git
-    targetRevision: main
+    targetRevision: master
     path: wordpress-beta
   destination:
     server: https://kubernetes.default.svc
-    namespace: argo 
+    namespace: wordpress
   syncPolicy:
     automated:
       prune: true
       selfHeal: true
-
