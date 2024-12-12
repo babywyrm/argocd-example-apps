@@ -7,5 +7,5 @@ spec:
     spec:
       containers:
         - name: example-container
-          image: "custom-image:1.0"  # Example override for the container image
+          image: "nginx:latest"  # Example override for the container image
 
