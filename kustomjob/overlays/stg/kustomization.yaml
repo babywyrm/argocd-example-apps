@@ -1,0 +1,8 @@
+bases:
+  - ../../base
+
+namePrefix: stg-
+
+patchesStrategicMerge:
+  - job-patch.yaml
+

@@ -1,0 +1,8 @@
+bases:
+  - ../../base
+
+namePrefix: prod-
+
+patchesStrategicMerge:
+  - job-patch.yaml
+
